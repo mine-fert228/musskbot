@@ -41,7 +41,7 @@ namespace telegrambotwin
             }
             string requestJson = $@"
             {{
-                ""model"": ""OpenAI/gpt-oss-20b"",
+                ""model"": ""@preset/mussk"",
                 ""max_tokens"": 400,
                 ""messages"": [
                     {{ ""role"": ""system"", ""content"": ""{systempromt}"" }},
