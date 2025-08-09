@@ -41,7 +41,7 @@ namespace telegrambotwin
             }
             string requestJson = $@"
             {{
-                ""model"": ""google/gemini-2.5-flash"",
+                ""model"": ""OpenAI/gpt-oss-20b"",
                 ""max_tokens"": 400,
                 ""messages"": [
                     {{ ""role"": ""system"", ""content"": ""{systempromt}"" }},
