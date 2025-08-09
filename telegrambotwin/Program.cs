@@ -38,9 +38,7 @@ class Program
 
         var me = await botClient.GetMe();
         Console.WriteLine($"Бот запущен: @{me.Username}");
-        Console.ReadLine();
-
-        cts.Cancel();
+        await Task.Delay(-1, cts.Token);
     }
 
     static async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)
